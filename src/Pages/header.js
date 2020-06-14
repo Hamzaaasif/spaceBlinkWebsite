@@ -1,9 +1,7 @@
 import React , { Component} from 'react'
 import {
   MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem,MDBIcon,MDBContainer
-
-  } from "mdbreact";
+MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem,MDBIcon, } from "mdbreact";
 
 import { BrowserRouter as Router } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -36,7 +34,7 @@ class header extends Component {
 
       <Router>
 
-      <MDBNavbar color="black "  transparent light expand="md"  scrolling fixed="top" >
+      <MDBNavbar color="black "  transparent dark expand="md"  scrolling fixed="top" >
 
         <MDBNavbarBrand href="/" className="font-weight-bold">
         <MDBIcon icon="cloud"  />  Space Blink
