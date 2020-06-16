@@ -107,7 +107,7 @@ const HotelsTours = () => {
 
     </MDBRow>
     <br/>
-    <button className="btn btn-flat align-content-center"><strong>View all </strong><i class="fas fas fa-angle-right pl-1"></i></button>
+    <button className="btn btn-flat "><strong>View all </strong><i class="fas fas fa-angle-right pl-1"></i></button>
      </section>
 
      <hr/>
@@ -148,32 +148,17 @@ const HotelsTours = () => {
 
          </MDBRow>
          <br/>
+         <hr/>
+         <br/>
+
+         <h2 className="h2-responsive font-weight-bold my-2 text-center ">
+           LATEST BLOG NEWS
+         </h2>
+         <p >Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.</p><br/>
      </section>
      </MDBContainer>
 
-
-
-     {/* <div class="row mx-1">
-      
-        <div class="col-md-12 mb-4">
-          
-            <div class="card card-image" style={{"background-image:url(https://mdbootstrap.com/img/Photos/Others/img%20%2832%29.jpg);"}} >
-                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
-
-                    <div>
-
-                        <h6 class="purple-text"><i class="fas fa-plane"></i><strong> Travel</strong></h6>
-                        <h3 class="card-title py-3 font-weight-bold"><strong>This is the card title</strong></h3>
-                        <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-                            optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos.
-                            Odit sed qui, dolorum!</p>
-                        <a class="btn btn-secondary btn-rounded"><i class="far fa-clone left"></i> View project</a>
-                    </div>
-
-                </div>
-            </div>
-         </div>
-        </div> */}
+     
 
     </div>
      

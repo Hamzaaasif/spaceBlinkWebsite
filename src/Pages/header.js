@@ -34,7 +34,7 @@ class header extends Component {
 
       <Router>
 
-      <MDBNavbar color="black "  transparent dark expand="md"  scrolling fixed="top" >
+      <MDBNavbar color="white"  transparent light expand="md"  scrolling fixed="top" >
 
         <MDBNavbarBrand href="/" className="font-weight-bold">
         <MDBIcon icon="cloud"  />  Space Blink
@@ -46,26 +46,40 @@ class header extends Component {
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
 
 
-          <MDBNavbarNav left>
+          <MDBNavbarNav left className=" my-2 ">
 
-                <MDBDropdown>
-                <MDBDropdownToggle color="primary" nav caret>
 
-                  <strong  className=" font-weight-bold h5-responsive"> Destinations
+          <MDBDropdown>
+                <MDBDropdownToggle nav caret>
+
+                  <strong className=" font-weight-bold  h6-responsive"> Home 
                   </strong>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem  href="#!">Beach Party Places</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Beach Love Stories</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Map</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Owl Carousel Slider</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Home Items with Carousel</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+
+                <MDBDropdown>
+                <MDBDropdownToggle color="" nav caret>
+
+                  <strong  className=" font-weight-bold h6-responsive"> Tours
+                  </strong>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem  href="#!">All Tour List</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">All Tour Grid</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">All Tour Sort Masonry</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
 
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
 
-                  <span className="mr-2 font-weight-bold  h5-responsive"> Resources & Tips
-                  </span>
+                  <strong className=" font-weight-bold  h6-responsive">Hotels
+                  </strong>
+
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem  href="#!">Visa Guides</MDBDropdownItem>
@@ -80,46 +94,32 @@ class header extends Component {
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
 
-                  <span className="mr-2 font-weight-bold  h5-responsive"> Story Teller
-                  </span>
+                  <strong className=" font-weight-bold h6-responsive"> Resturants
+                  </strong>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu transparent> 
-                  <MDBDropdownItem href="#!"  >About Nature</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">About Culture</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Inspirations</MDBDropdownItem>
+                  <MDBDropdownItem href="#!"  >All Resturants List</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">All Resturants Grid</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">All Resturants Sort Masonry</MDBDropdownItem>
 
                 </MDBDropdownMenu>
               </MDBDropdown>
-
-              <MDBDropdownToggle nav >
-                  <span className="mr-2 font-weight-bold  h5-responsive"> Blog
-                  </span>
-                </MDBDropdownToggle>
 
             <MDBDropdown>
               
                 <MDBDropdownToggle nav caret>
-                  <span className="mr-2 font-weight-bold  h5-responsive"> About
-                  </span>
+                  <strong className=" font-weight-bold  h6-responsive"> Pages
+                  </strong>
                 </MDBDropdownToggle>
 
                 <MDBDropdownMenu>
-                  <MDBDropdownItem href="#!">My Story</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Work With Me</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Blog</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">FAQs</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">About Us</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
 
-              <MDBDropdown>
-                <MDBDropdownToggle nav caret>
-
-                  <span className="mr-2 font-weight-bold  h5-responsive"> Shop 
-                  </span>
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem href="#!">Travel Gear</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Ebooks</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
+              
 
           </MDBNavbarNav>
 

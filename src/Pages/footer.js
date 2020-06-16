@@ -52,10 +52,6 @@ class footer extends Component {
             
           </MDBCol>
 
-          <MDBCol>
-
-          </MDBCol>
-
         </MDBRow>
       </MDBContainer>
     </MDBFooter>

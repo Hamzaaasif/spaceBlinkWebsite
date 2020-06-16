@@ -2,12 +2,13 @@ import React , {Component} from 'react'
 
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
 "mdbreact";
+import  './home.css'
 
 const carousel = () => {
   return (
     <div>
 
-    <MDBContainer>
+    {/* <MDBContainer size="fluid" className="d-block"> */}
 
       <MDBCarousel
       mobileGesture ={true}
@@ -20,8 +21,8 @@ const carousel = () => {
     >
       
       <MDBCarouselInner>
-        <MDBCarouselItem itemId="1">
-          <MDBView>
+        <MDBCarouselItem  itemId="1">
+          <MDBView  >
 
             <img
               className="d-block w-100"
@@ -29,13 +30,13 @@ const carousel = () => {
               alt="First slide"
             />
 
-          <MDBMask overlay="black-light" />
+          {/* <MDBMask overlay="black-light" /> */}
 
           </MDBView>
 
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Light mask</h3>
-            <p>First text</p>
+            <h2 className="h2-responsive "><strong>DISCOVER THE WORLD</strong></h2>
+            <p>Discover hidden wonders on trips by SpaceBlink Tours Experts</p>
           </MDBCarouselCaption>
 
         </MDBCarouselItem>
@@ -43,15 +44,15 @@ const carousel = () => {
         <MDBCarouselItem itemId="2">
           <MDBView>
             <img
-              className="d-block w-100"
+              className="d-block w-100 "
               src={require('../img/cover 1.jpg')}
               alt="Second slide"
             />
-          <MDBMask overlay="black-strong" />
+          {/* <MDBMask overlay="black-strong" /> */}
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Strong mask</h3>
-            <p>Second text</p>
+            <h2 className="h2-responsive"><strong>DISCOVER NATURE</strong></h2>
+            <p>Discover hidden wonders on trips by SpaceBlink Tours Experts</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="3">
@@ -61,16 +62,16 @@ const carousel = () => {
               src={require('../img/cover 2.jpg')}
               alt="Third slide"
             />
-          <MDBMask overlay="black-slight" />
+          {/* <MDBMask overlay="black-slight" /> */}
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Slight Mast</h3>
-            <p>Third text</p>
+            <h3 className="h3-responsive"><strong>LOVE PARIS</strong></h3>
+            <p>Discover hidden wonders on trips by SpaceBlink Tours Experts</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
       </MDBCarouselInner>
     </MDBCarousel>
-    </MDBContainer>
+    {/* </MDBContainer> */}
 
     </div>    
   );
