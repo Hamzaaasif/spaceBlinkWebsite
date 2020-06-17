@@ -1,45 +1,38 @@
 import React, { Component } from "react";
 
 import Card from './Card';
+// import resort from './alexander.jpg';
 // import {Link} from 'react-router-dom';
 
 import './Cards.css';
 
 class Cards extends Component {
     state = {
-        cards : [{'id':1,
-                  'productName': 'Jeans' ,'price':'$19.20',
-                  'text': 'Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.'
-                },
-                {'id':2,
-                  'productName': 'Jeans' ,'price':'$19.20',
-                  'text': 'Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.'
-                },
-                {'id':3,
-                  'productName': 'Jeans' ,'price':'$19.20',
-                  'text': 'Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.'
-                }
+        cards : [
 
                 
                 ],
     }
 
-  
+    componentWillMount(){
+      this.setState({cards:this.props.CardData});
+    }
 
      render () {
         let cards = <p >something went wrong!</p>
         if(!this.state.error){
             cards = this.state.cards.map(card => {
-                console.log(card.price)
                 return (
                         //  <Link to={'/' + post.id} key={post.id} >
                             
                             
                             <Card                               
                             key={card.id}
-                            productName = {card.productName}
+                            tourName = {card.productName}
                             price={card.price} 
                             text={card.text}
+                            source={card.imagesrc}
+                            lightName={this.props.lightName}
                             />
                         // </Link>
                             )
@@ -48,6 +41,27 @@ class Cards extends Component {
          return(
             <section className="box">
             {cards}
+
+            <nav aria-label="Page navigation example">
+                 <ul class="pagination pg-blue">
+                 <li class="page-item">
+                 <a class="page-link" aria-label="Previous">
+                       <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                 </a>
+            </li>
+             <li class="page-item"><a class="page-link" href="/">1</a></li>
+            <li class="page-item"><a class="page-link" href="/">2</a></li>
+            <li class="page-item"><a class="page-link" href="/">3</a></li>
+            <li class="page-item">
+             <a class="page-link" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+            </a>
+            </li>
+            </ul>
+            </nav>
+
             </section>
             
          );
