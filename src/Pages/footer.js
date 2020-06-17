@@ -20,7 +20,7 @@ class footer extends Component {
 
           <MDBCol >
             <h4 className="title "> <strong>Need Help ? </strong></h4> <br/>
-            <MDBIcon icon="phone-volume fa-2x " /> <strong> 004542344599 </strong> <br/><br/>
+            <MDBIcon icon="phone-volume fa-2x " /> <strong> +45 423 445 99 </strong> <br/><br/>
             <MDBIcon far icon="envelope fa-2x" /> <strong>  help@spaceBlink.com </strong>
           </MDBCol>
 
@@ -28,10 +28,10 @@ class footer extends Component {
             <h5 className="title"> <strong> ABOUT</strong></h5>
             
               <li className="list-unstyled">
-                <a href="#!"> <strong>About us </strong></a>
+                <a href="/AboutUs"> <strong>About us </strong></a>
               </li>
               <li className="list-unstyled">
-                <a href="#!"> <strong> FAQ </strong></a>
+                <a href="/FAQs"> <strong> FAQ </strong></a>
               </li>
 
             
@@ -41,13 +41,16 @@ class footer extends Component {
             <h5 className="title"><strong>Discover</strong></h5>
             
               <li className="list-unstyled">
-                <a href="#!"> <strong> Tour List </strong></a>
+                <a href="/allTours"> <strong> Tour List </strong></a>
               </li>
               <li className="list-unstyled">
-                <a href="#!"> <strong> Hotels List </strong></a>
+                <a href="allHotels"> <strong> Hotels List </strong></a>
               </li>
               <li className="list-unstyled">
-                <a href="#!"><strong> Transfer list </strong></a>
+                <a href="/allTransfers"><strong> Transfer list </strong></a>
+              </li>
+              <li className="list-unstyled">
+                <a href="/allResturant"><strong> All Resturants </strong></a>
               </li>
             
           </MDBCol>
@@ -57,37 +60,38 @@ class footer extends Component {
     </MDBFooter>
     
 
-<footer class="page-footer font-small grey darken-2  pt-1">
+<footer className="page-footer font-small grey darken-2  pt-1">
 
 
-<div class="container">
+<div className="container">
 
-<div class="row">
+<div className="row">
 
 
-  <div class="col-md-12 py-5">
-    <div class="mb-5 flex-center">
+  <div className="col-md-12 py-5">
+    <div className="mb-5 flex-center">
 
       
-      <a class="fb-ic">
-        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3"> </i>
+      <a href="/"  className="fb-ic">
+        <i className="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3"> </i>
+        
       </a>
     
-      <a class="tw-ic">
-        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 "> </i>
+      <a href="/" className="tw-ic">
+        <i className="fab fa-twitter fa-lg white-text mr-md-5 mr-3 "> </i>
       </a>
       
-      <a class="gplus-ic">
-        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 "> </i>
+      <a href="/"  className="gplus-ic">
+        <i className="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 "> </i>
       </a>
       
      
-      <a class="ins-ic">
-        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 "> </i>
+      <a href="/" className="ins-ic">
+        <i clclassNameass="fab fa-instagram fa-lg white-text mr-md-5 mr-3 "> </i>
       </a>
       
-      <a class="pin-ic">
-        <i class="fab fa-pinterest fa-lg white-text "> </i>
+      <a href="/" className="pin-ic">
+        <i className="fab fa-pinterest fa-lg white-text "> </i>
       </a>
       
       

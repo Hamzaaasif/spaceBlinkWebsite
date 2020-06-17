@@ -56,8 +56,8 @@ class header extends Component {
                   </strong>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem href="#!">Owl Carousel Slider</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Home Items with Carousel</MDBDropdownItem>
+                  <MDBDropdownItem href="/">Owl Carousel Slider</MDBDropdownItem>
+                  <MDBDropdownItem href="/">Home Items with Carousel</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
 
@@ -68,9 +68,9 @@ class header extends Component {
                   </strong>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem  href="#!">All Tour List</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">All Tour Grid</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">All Tour Sort Masonry</MDBDropdownItem>
+                  <MDBDropdownItem  href="/allTours">All Tour List</MDBDropdownItem>
+                  <MDBDropdownItem href="/allTours">All Tour Grid</MDBDropdownItem>
+                  <MDBDropdownItem href="/allTours">All Tour Sort Masonry</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
 
@@ -82,12 +82,13 @@ class header extends Component {
 
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
-                  <MDBDropdownItem  href="#!">Visa Guides</MDBDropdownItem>
-                  <MDBDropdownItem  href="#!">Travel Guides</MDBDropdownItem>
-                  <MDBDropdownItem  href="#!">Food</MDBDropdownItem>
-                  <MDBDropdownItem   href="#!">Hotel Reviews</MDBDropdownItem>
+                <MDBDropdownItem  href="/allHotels">All Hotels</MDBDropdownItem>
+                  <MDBDropdownItem  href="/allHotels">Visa Guides</MDBDropdownItem>
+                  <MDBDropdownItem  href="/allHotels">Travel Guides</MDBDropdownItem>
+                  <MDBDropdownItem  href="/allHotels">Food</MDBDropdownItem>
+                  <MDBDropdownItem   href="/allHotels">Hotel Reviews</MDBDropdownItem>
                   <MDBDropdownItem  href="#!">Start a Travel Blog</MDBDropdownItem>
-                  <MDBDropdownItem  href="#!">Sustainable Travel</MDBDropdownItem>
+                  <MDBDropdownItem  href="/allHotels">Sustainable Travel</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
 
@@ -98,9 +99,9 @@ class header extends Component {
                   </strong>
                 </MDBDropdownToggle>
                 <MDBDropdownMenu transparent> 
-                  <MDBDropdownItem href="#!"  >All Resturants List</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">All Resturants Grid</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">All Resturants Sort Masonry</MDBDropdownItem>
+                  <MDBDropdownItem href="/allResturant"  >All Resturants List</MDBDropdownItem>
+                  <MDBDropdownItem href="/allResturant">All Resturants Grid</MDBDropdownItem>
+                  <MDBDropdownItem href="/allResturant!">All Resturants Sort Masonry</MDBDropdownItem>
 
                 </MDBDropdownMenu>
               </MDBDropdown>
@@ -113,9 +114,9 @@ class header extends Component {
                 </MDBDropdownToggle>
 
                 <MDBDropdownMenu>
-                  <MDBDropdownItem href="#!">Blog</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">FAQs</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">About Us</MDBDropdownItem>
+                  <MDBDropdownItem href="/AboutUs">Blog</MDBDropdownItem>
+                  <MDBDropdownItem href="/AboutUs">FAQs</MDBDropdownItem>
+                  <MDBDropdownItem href="/AboutUs">About Us</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
 

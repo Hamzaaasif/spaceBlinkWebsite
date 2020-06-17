@@ -1,6 +1,5 @@
 import React from 'react'
 //import {withRouter} from 'react-router-dom';
-import { MDBIcon } from "mdbreact"; 
 
 const RatingCard = (props) => {
     let selectClass = ["fas fa-star blue-text","far fa-star blue-text"]

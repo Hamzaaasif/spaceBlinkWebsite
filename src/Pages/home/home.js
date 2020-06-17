@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Carousel from './carousel';
 import CardSection from './cardSection'
 import HotelsTours from './Hotel&TourList'
 import BlogNews from './blogs'
