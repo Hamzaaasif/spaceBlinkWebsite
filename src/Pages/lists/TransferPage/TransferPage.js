@@ -2,6 +2,8 @@ import React from 'react';
 import SidePanels from '../sidePanel/SidePanels';
 import TransferCard from '../Card/Cards';
 import classes from './TransferPage.module.css';
+import IMAGES from './images';
+import { MDBContainer,MDBRow, MDBCol} from "mdbreact";
 
 const TransferPage = () => {
     
@@ -33,47 +35,54 @@ const TransferPage = () => {
             {'id':1,
             'productName': 'ORLY AIRPORT' ,'price':'$39',
             'text': 'Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum ex, qui adipisci maiestatis inciderint no, eos in elit dicat.....',
-            'imagesrc':'images/pic1.jpg'
+            'imagesrc':IMAGES[0]
             },
       
             {'id':2,
             'productName': ' AIRPORT PRIVATE ' ,'price':'$42',
             'text': 'Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum ex, qui adipisci maiestatis inciderint no, eos in elit dicat.....',
-            'imagesrc':'images/pic2.jpg'
+            'imagesrc':IMAGES[1]
             },
             
             {'id':3,
             'productName': 'AIRPORT GROUP' ,'price':'$39',
             'text': 'Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum ex, qui adipisci maiestatis inciderint no, eos in elit dicat.....',
-            'imagesrc':'images/pic3.jpg'
+            'imagesrc':IMAGES[2]
             },
             {'id':4,
             'productName': 'DISNEYLAND ' ,'price':'$69',
             'text': 'Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum ex, qui adipisci maiestatis inciderint no, eos in elit dicat.....',
-            'imagesrc':'images/pic4.jpg'
+            'imagesrc':IMAGES[3]
                 },
             {'id':5,
             'productName': 'BEACH' ,'price':'$49',
             'text': 'Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum ex, qui adipisci maiestatis inciderint no, eos in elit dicat.....',
-            'imagesrc':'images/pic5.jpg'
+            'imagesrc':IMAGES[4]
             },
             
         ];
 
     return(
-        <div className={classes.wrapper}> 
-            <div className={classes.sidePanel}>
-                <SidePanels 
-                    sidepanel={sidePanels} 
-                    districtName={districtNames}
-                    titleName={TitleName}
-                    show={true}
-                    />            
-            </div>
+        <MDBContainer fluid >
+        <MDBRow>       
+            <MDBCol md="4">
+                <div className={classes.sidePanel}>
+                    <SidePanels 
+                        sidepanel={sidePanels} 
+                        districtName={districtNames}
+                        titleName={TitleName}
+                        show={true}/>            
+                </div>
+            </MDBCol>
+            <MDBCol md="8">
+            {/* <div style={{backgroundColor:"red", height:'90vh', flexGrow:"10"}}/> */}
             <div className={classes.resCard}>
-                <TransferCard CardData={cardData} lightName="TRANSFER" />
+            <TransferCard CardData={cardData} lightName='TOUR'/>
             </div>
-        </div>
+            </MDBCol>
+
+        </MDBRow>
+        </MDBContainer>
     )
 }
 

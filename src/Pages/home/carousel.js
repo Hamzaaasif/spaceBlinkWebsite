@@ -6,7 +6,7 @@ import  './home.css'
 
 const carousel = () => {
   return (
-    <div>
+    <div >
 
     {/* <MDBContainer size="fluid" className="d-block"> */}
 
@@ -34,8 +34,8 @@ const carousel = () => {
 
           </MDBView >
 
-          <MDBCarouselCaption className="justify-content-between">
-            <h2 className="h2-responsive "><strong>DISCOVER THE WORLD</strong></h2>
+          <MDBCarouselCaption >
+            <h1 className="h1-responsive "><strong>GOING INSIDE THE LOUVRE MUSEUM</strong></h1>
             <p>Discover hidden wonders on trips by SpaceBlink Tours Experts</p>
           </MDBCarouselCaption>
 
@@ -51,7 +51,7 @@ const carousel = () => {
           {/* <MDBMask overlay="black-strong" /> */}
           </MDBView>
           <MDBCarouselCaption>
-            <h2 className="h2-responsive"><strong>DISCOVER NATURE</strong></h2>
+            <h1 className="h1-responsive"><strong>LOVE PARIS </strong></h1>
             <p>Discover hidden wonders on trips by SpaceBlink Tours Experts</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>
@@ -65,7 +65,7 @@ const carousel = () => {
           {/* <MDBMask overlay="black-slight" /> */}
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive"><strong>LOVE PARIS</strong></h3>
+            <h1 className="h1-responsive"><strong>DISCOVER VATICAN MUSEUM</strong></h1>
             <p>Discover hidden wonders on trips by SpaceBlink Tours Experts</p>
           </MDBCarouselCaption>
         </MDBCarouselItem>

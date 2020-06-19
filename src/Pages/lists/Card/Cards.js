@@ -8,10 +8,7 @@ import './Cards.css';
 
 class Cards extends Component {
     state = {
-        cards : [
-
-                
-                ],
+        cards : [],
     }
 
     componentWillMount(){
@@ -45,7 +42,7 @@ class Cards extends Component {
             <nav aria-label="Page navigation example">
                  <ul class="pagination pg-blue">
                  <li class="page-item">
-                 <a class="page-link" aria-label="Previous">
+                 <a class="page-link" aria-label="Previous" href="/">
                        <span aria-hidden="true">&laquo;</span>
                         <span class="sr-only">Previous</span>
                  </a>

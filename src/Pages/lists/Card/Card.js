@@ -9,23 +9,23 @@ const card = (props) => {
         
         <div className="wrapper">
             <div className="product-img view zoom">
-            <img src={require('../TourPage/' +props.source)} alt="Denim Jeans" ></img>
+            <img src={(props.source)} alt="resort" ></img>
             </div>
             <div className="product-info">
-            <div className="product-text">
-                <h1>{props.tourName}</h1>
-                <h2>{props.lightName}</h2>
-                <p>{props.text}</p>
-            </div>
-            <div className="product-price-btn">
-                <p><span>{props.price}</span></p>
-                {/* <p className="details">Details</p> */}
-                <div className="details">Details   <MDBIcon icon="angle-double-right"/> </div>
-                {/* <button type="button">Details</button> */}
-            </div>
+                <div className="product-text">
+                    <h1>{props.tourName}</h1>
+                    <h2>{props.lightName}</h2>
+                    <p>{props.text}</p>
+                </div>
+                <div className="product-price-btn">
+                    <p><span>{props.price}</span></p>
+                    {/* <p className="details">Details</p> */}
+                    <div className="details">Details   <MDBIcon icon="angle-double-right"/> </div>
+                    {/* <button type="button">Details</button> */}
+                </div>
             </div>
         </div>
-                //////////////////////////////////////////////
+                
         );
 };
 

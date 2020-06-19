@@ -2,6 +2,8 @@ import React from 'react';
 import SidePanels from '../sidePanel/SidePanels';
 import HotelsCard from '../Card/Cards';
 import classes from './HotelsPage.module.css';
+import { MDBContainer,MDBRow, MDBCol} from "mdbreact";
+import IMAGES from './images';
 
 const AllHotels = () => {
     
@@ -34,48 +36,55 @@ const AllHotels = () => {
             {'id':1,
             'productName': 'PARK HYATT HOTEL' ,'price':'$139',
             'text': 'Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum...',
-            'imagesrc':'images/pic1.jpg'
+            'imagesrc':IMAGES[0]
             },
       
             {'id':2,
             'productName': 'MARIOTT HOTEL' ,'price':'$142',
             'text': 'Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum...',
-            'imagesrc':'images/pic2.jpg'
+            'imagesrc':IMAGES[1]
             },
             
             {'id':3,
             'productName': 'LUMIERE HOTEL' ,'price':'$319',
             'text': 'Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum...',
-            'imagesrc':'images/pic3.jpg'
+            'imagesrc':IMAGES[2]
             },
             {'id':4,
             'productName': 'CONCORDE HOTEL' ,'price':'$169',
             'text': 'Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum...',
-            'imagesrc':'images/pic4.jpg'
+            'imagesrc':IMAGES[3]
                 },
             {'id':5,
             'productName': 'CONCORDE HOTEL' ,'price':'$149',
             'text': 'Lorem ipsum dolor sit amet, quem convenire interesset ut vix, ad dicat sanctus detracto vis. Eos modus dolorum...',
-            'imagesrc':'images/pic5.jpg'
+            'imagesrc':IMAGES[4]
             },
             
         ];
 
     return(
-        <div className={classes.wrapper}> 
-            <div className={classes.sidePanel}>
-                <SidePanels 
-                   
-                    sidepanel={sidePanels} 
-                    districtName={districtNames}
-                    titleName={TitleName}
-                    show={true}
-                    />            
-            </div>
+
+        <MDBContainer fluid >
+        <MDBRow>       
+            <MDBCol md="4">
+                <div className={classes.sidePanel}>
+                    <SidePanels 
+                        sidepanel={sidePanels} 
+                        districtName={districtNames}
+                        titleName={TitleName}
+                        show={true}/>            
+                </div>
+            </MDBCol>
+            <MDBCol md="8">
+            {/* <div style={{backgroundColor:"red", height:'90vh', flexGrow:"10"}}/> */}
             <div className={classes.resCard}>
-                <HotelsCard CardData={cardData} lightName="HOTELS" />
+            <HotelsCard CardData={cardData} lightName='TOUR'/>
             </div>
-        </div>
+            </MDBCol>
+
+        </MDBRow>
+        </MDBContainer>
     )
 }
 
