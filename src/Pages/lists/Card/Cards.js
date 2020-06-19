@@ -51,7 +51,7 @@ class Cards extends Component {
             <li class="page-item"><a class="page-link" href="/">2</a></li>
             <li class="page-item"><a class="page-link" href="/">3</a></li>
             <li class="page-item">
-             <a class="page-link" aria-label="Next">
+             <a class="page-link" aria-label="Next" href="/">
                     <span aria-hidden="true">&raquo;</span>
                     <span class="sr-only">Next</span>
             </a>

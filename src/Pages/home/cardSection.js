@@ -58,7 +58,7 @@ class cardSection extends Component {
           <MDBCol lg="4" md="6" className="mb-3">
             
             <MDBView waves zoom>
-          <img src="https://mdbootstrap.com/img/Others/documentation/img(117)-mini.jpg" className="img-fluid z-depth-1" className="img-fluid z-depth-1" alt="" />
+           <img src="https://mdbootstrap.com/img/Others/documentation/img(117)-mini.jpg" className="img-fluid z-depth-1 img-fluid z-depth-1"  alt="Responsive" />
 
           <MDBCarouselCaption>
             <h2 className="h2-responsive font-bold" > <strong >RESTURANTS </strong></h2>

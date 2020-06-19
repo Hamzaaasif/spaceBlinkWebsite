@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView,  MDBContainer } from
+import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView } from
 "mdbreact";
 import  './home.css'
 
