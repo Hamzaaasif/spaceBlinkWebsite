@@ -68,7 +68,9 @@ const AllHotels = () => {
                    
                     sidepanel={sidePanels} 
                     districtName={districtNames}
-                    titleName={TitleName}/>            
+                    titleName={TitleName}
+                    show={true}
+                    />            
             </div>
             <div className={classes.resCard}>
                 <HotelsCard CardData={cardData} lightName="HOTELS" />

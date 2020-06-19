@@ -54,7 +54,9 @@ const HotelsTours = () => {
     </MDBCol>
     </MDBRow>
     <br/>
-    <button className="btn btn-flat align-content-center"><strong>View all </strong><i class="fas fas fa-angle-right pl-1"></i></button>
+
+    <a href="/allTours">
+    <button className="btn btn-flat align-content-center"><strong>View all </strong><i class="fas fas fa-angle-right pl-1"></i></button></a>
      </section>
 
      <hr/>
@@ -107,7 +109,9 @@ const HotelsTours = () => {
 
     </MDBRow>
     <br/>
+    <a href="/allHotels" >
     <button className="btn btn-flat "><strong>View all </strong><i class="fas fas fa-angle-right pl-1"></i></button>
+    </a>
      </section>
 
      <hr/>

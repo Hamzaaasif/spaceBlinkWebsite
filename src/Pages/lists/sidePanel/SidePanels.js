@@ -8,11 +8,12 @@ class SidePanels extends Component {
     state = {
         sidePanels : [],
         error: false,
+        show: true,
     }
 
     componentWillMount(){
         
-        this.setState({sidePanels :this.props.sidepanel})
+        this.setState({sidePanels :this.props.sidepanel, show:this.props.show})
     }
     
 
@@ -32,6 +33,13 @@ class SidePanels extends Component {
                             // "chevron-right" 
             });
         }
+
+        let ratingCard = null;
+        if(this.state.show){
+            ratingCard = (<RatingCards districtNames={this.props.districtName}
+                titleName={this.props.titleName}/>)
+        }
+
          return(
             
             <MDBContainer style={{ margin: " 50px auto"}}>
@@ -46,8 +54,7 @@ class SidePanels extends Component {
             
             </MDBCard>
 
-            <RatingCards districtNames={this.props.districtName}
-                        titleName={this.props.titleName}/>
+            {ratingCard}
 
             
             <HelpCard/> 

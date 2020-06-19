@@ -21,7 +21,7 @@ const carousel = () => {
     >
       
       <MDBCarouselInner>
-        <MDBCarouselItem  itemId="1">
+        <MDBCarouselItem  itemId="1" >
           <MDBView  >
 
             <img
@@ -32,9 +32,9 @@ const carousel = () => {
 
           {/* <MDBMask overlay="black-light" /> */}
 
-          </MDBView>
+          </MDBView >
 
-          <MDBCarouselCaption>
+          <MDBCarouselCaption className="justify-content-between">
             <h2 className="h2-responsive "><strong>DISCOVER THE WORLD</strong></h2>
             <p>Discover hidden wonders on trips by SpaceBlink Tours Experts</p>
           </MDBCarouselCaption>

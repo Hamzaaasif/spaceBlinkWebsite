@@ -36,8 +36,9 @@ class header extends Component {
 
       <MDBNavbar color="white"  transparent light expand="md"  scrolling fixed="top" >
 
-        <MDBNavbarBrand href="/" className="font-weight-bold">
-        <MDBIcon icon="cloud"  />  Space Blink
+        <MDBNavbarBrand href="/" >
+        <MDBIcon fab icon="free-code-camp fa-3x" /> 
+         <h6 className="font-weight-bold">Space Blink</h6>
         
               
         </MDBNavbarBrand>
@@ -106,6 +107,20 @@ class header extends Component {
                 </MDBDropdownMenu>
               </MDBDropdown>
 
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret>
+
+                  <strong className=" font-weight-bold h6-responsive"> Transfer
+                  </strong>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu transparent> 
+                  <MDBDropdownItem href="/allTransfers"  >All Transfer List</MDBDropdownItem>
+                  <MDBDropdownItem href="/allTransfers">All Transfer Grid</MDBDropdownItem>
+                  <MDBDropdownItem href="/allTransfers">All Transfer Sort Masonry</MDBDropdownItem>
+
+                </MDBDropdownMenu>
+              </MDBDropdown>
+
             <MDBDropdown>
               
                 <MDBDropdownToggle nav caret>
@@ -114,8 +129,7 @@ class header extends Component {
                 </MDBDropdownToggle>
 
                 <MDBDropdownMenu>
-                  <MDBDropdownItem href="/AboutUs">Blog</MDBDropdownItem>
-                  <MDBDropdownItem href="/AboutUs">FAQs</MDBDropdownItem>
+                  <MDBDropdownItem href="/faqs">FAQs</MDBDropdownItem>
                   <MDBDropdownItem href="/AboutUs">About Us</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>

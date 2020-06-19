@@ -65,7 +65,9 @@ const TourPage = () => {
                 <SidePanels 
                     sidepanel={sidePanels} 
                     districtName={districtNames}
-                    titleName={TitleName}/>            
+                    titleName={TitleName}
+                    show={true}
+                    />            
             </div>
             <div className={classes.tourCard}>
                 <TourCard CardData={cardData} lightName='TOUR'/>

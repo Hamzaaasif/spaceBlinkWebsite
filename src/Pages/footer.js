@@ -31,7 +31,7 @@ class footer extends Component {
                 <a href="/AboutUs"> <strong>About us </strong></a>
               </li>
               <li className="list-unstyled">
-                <a href="/FAQs"> <strong> FAQ </strong></a>
+                <a href="/faqs"> <strong> FAQ </strong></a>
               </li>
 
             
